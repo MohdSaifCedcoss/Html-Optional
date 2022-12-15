@@ -1,0 +1,64 @@
+.container {
+  /* width: 60%; */
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.img {
+  width: 125%;
+  height: auto;
+}
+.side {
+  padding-left: 22%;
+  width: 40%;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.__sider {
+  display: flex;
+  flex-wrap: wrap;
+}
+.__main {
+  padding: 13%;
+  margin: 13%;
+  margin-top: 1%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.--one {
+  background-color: lightgoldenrodyellow;
+}
+.--two {
+  background-color: burlywood;
+}
+.--three {
+  background-color: antiquewhite;
+}
+.--four {
+  background-color: bisque;
+}
+.btn {
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: inherit;
+  font-size: large;
+}
+@media screen and (max-width:587px) {
+    .container{
+        display: block;
+        width: 100%;
+    }
+    .img{
+        width: auto;
+    }
+    .__sider{
+        display: block;
+        margin: 0%;
+        
+    }
+    .__main{
+        /* padding: 12%;  */
+        width: 200px;
+        display: block;
+        margin-left: -60%;
+    }
+}
