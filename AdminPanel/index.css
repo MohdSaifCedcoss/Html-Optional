@@ -1,15 +1,17 @@
+/* For main container */
 .main {
   display: flex;
-  width: 100%;
 }
+/* For side navigation bar */
 .side {
   background-color: #cce3de;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   height: 100vh;
   margin: -10px 20px 0 -10px;
   padding: 1%;
-  width: 15%;
+  width: 25%;
 }
+/* List in navigation bar */
 .side__li {
   background-color: #bcd3ce;
   border: 1px solid #bcd3ce;
@@ -19,11 +21,113 @@
   list-style: none;
   margin: 4px -10px 0 -60px;
   padding: 20px;
+  width: auto;
 }
+/* Logout button */
 .side__logout {
   background-color: inherit;
   border: none;
   display: flex;
   font-size: large;
   margin: auto;
+}
+/* content container */
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 0 0 30px;
+  text-align: center;
+  width: 140%;
+}
+/* Table container */
+.container__table {
+  border-collapse: collapse;
+  border: 1px solid #bcd3ce;
+  text-align: center;
+  width: 100%;
+}
+/* Table row */
+.container__table__tr {
+  background-color: #bcd3ce;
+}
+/* Table head */
+.container__table__th {
+  padding: 10px;
+}
+/* Table data */
+.container__table__td {
+  border: 1px solid #bcd3ce;
+  padding: 10px;
+}
+/* <generic button */
+.button {
+  background-color: #a4c3b2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: large;
+  padding: 2px 25px 2px 25px;
+  width: auto;
+}
+/* Button modifier for green color*/
+.success {
+  background-color: #00cc00;
+}
+/* Button modifier for red color */
+.danger {
+  background-color: #c00;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+}
+/* Button modifier for extra margin */
+.margin {
+  border: 2px solid #a4c3b2;
+  font-weight: bold;
+  margin: 0 10px 0 10px;
+  padding: 5px 35px 5px 35px;
+}
+/* For input */
+.input {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 0 0 0 15px;
+  padding: 10px 55px 10px 10px;
+  width: 25%;
+}
+/* For dropdown container */
+.option {
+  display: flex;
+  margin: 0 0 0 110px;
+}
+/* Dropdown */
+.option__select {
+  border-radius: 3px;
+  background-color: transparent;
+  height: 40px;
+  margin: -10px 0 0 80px;
+  padding: 2px 60px 2px 13px;
+}
+/* Media querry for responsiveness */
+@media screen and (max-width: 587px) {
+  .side {
+    height: auto;
+    width: 22%;
+  }
+  .side__li {
+    width: 130%;
+  }
+  .container {
+    margin: 0 0 0 30px;
+    width: 60%;
+  }
+  .button {
+    margin: 10px 0 10px 0;
+  }
+  .input {
+    margin: 10px 0 10px -35px;
+    width: auto;
+  }
+  .option {
+    margin: 12px 0 0 -30px;
+    width: 20%;
+  }
 }

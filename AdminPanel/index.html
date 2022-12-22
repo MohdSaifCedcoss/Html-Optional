@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <!-- This is main container -->
     <section class="main">
+      <!-- This for side navigation bar -->
       <aside class="side">
         <h2>Admin Panel</h2>
         <ul>
@@ -22,68 +24,100 @@
         </ul>
         <button class="side__logout">Logout</button>
       </aside>
-      <center>
-        <section>
-          <h2>Navigation Links</h2>
-          <table>
-            <tr>
-              <th>URL</th>
-              <th>Name</th>
-              <th>Edit</th>
-              <th>Move</th>
-              <th>Visbile</th>
-              <th>Delete</th>
+      <!-- This is for content container -->
+      <section class="container">
+        <h2>Navigation Links</h2>
+        <div style="overflow-x: auto">
+          <table class="container__table">
+            <tr class="container__table__tr">
+              <th class="container__table__th">URL</th>
+              <th class="container__table__th">Name</th>
+              <th class="container__table__th">Edit</th>
+              <th class="container__table__th">Move</th>
+              <th class="container__table__th">Visible</th>
+              <th class="container__table__th">Delete</th>
             </tr>
             <tr>
-              <td>/</td>
-              <td>Home</td>
-              <td><button>Edit</button></td>
-              <td><button>d</button></td>
-              <td><button>Visible</button></td>
-              <td><button>X</button></td>
+              <td class="container__table__td">/</td>
+              <td class="container__table__td">Home</td>
+              <td class="container__table__td">
+                <button class="button">Edit</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button">▼</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button success">Visible</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button danger">X</button>
+              </td>
             </tr>
             <tr>
-              <td>/posts</td>
-              <td>Post</td>
-              <td>Edit</td>
-              <td><button>u</button> <button>d</button></td>
-              <td><button>Visible</button></td>
-              <td><button>X</button></td>
+              <td class="container__table__td">/posts</td>
+              <td class="container__table__td">Post</td>
+              <td class="container__table__td">
+                <button class="button">Edit</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button">▲</button>
+                <button class="button">▼</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button success">Visible</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button danger">X</button>
+              </td>
             </tr>
             <tr>
-              <td>/contact</td>
-              <td>Contact</td>
-              <td>Edit</td>
-              <td><button>u</button></td>
-              <td><button>Visible</button></td>
-              <td><button>X</button></td>
+              <td class="container__table__td">/contact</td>
+              <td class="container__table__td">Contact</td>
+              <td class="container__table__td">
+                <button class="button">Edit</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button">▲</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button success">Visible</button>
+              </td>
+              <td class="container__table__td">
+                <button class="button danger">X</button>
+              </td>
             </tr>
           </table>
-          <div>
-            <h2>Quick Links</h2>
-            <button>Link Static Page</button><button>Link Post</button
-            ><button>Link Module</button>
-          </div>
-          <div>
-            <h2>Add New Link</h2>
-            <input type="text" placeholder="URL" /><input
-              type="text"
-              placeholder="Name"
-            /><button>Add</button>
-          </div>
-          <div>
-            <h3>Options</h3>
-            <h4>Navigation Link Spacer</h4>
-            <dropdown>
+        </div>
+        <div>
+          <h2>Quick Links</h2>
+          <button class="button margin">Link Static Page</button
+          ><button class="button margin">Link Post</button
+          ><button class="button margin">Link Module</button>
+        </div>
+        <div>
+          <h2>Add New Link</h2>
+          <input type="text" placeholder="URL" class="input" /><input
+            type="text"
+            placeholder="Name"
+            class="input"
+          /><button class="button margin">Add</button>
+        </div>
+        <div>
+          <h2>Options</h2>
+          <div class="option">
+            <b>Navigation Link Spacer</b>
+            <select class="option__select">
               <option value="val">Wilder Space</option>
               <option value="">Something else</option>
-            </dropdown>
-            <p>Set the spacing between the navigation links</p>
+            </select>
           </div>
-          <hr />
-          <button>Save</button>
-        </section>
-      </center>
+          <p style="text-align: left; margin-left: 110px">
+            Set the spacing between the navigation links
+          </p>
+        </div>
+        <hr />
+        <button class="button margin">Save</button>
+      </section>
     </section>
   </body>
 </html>
