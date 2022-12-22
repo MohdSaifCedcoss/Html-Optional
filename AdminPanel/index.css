@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  width: 100%;
+}
+.side {
+  background-color: #cce3de;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: -10px 20px 0 -10px;
+  padding: 1%;
+  width: 15%;
+}
+.side__li {
+  background-color: #bcd3ce;
+  border: 1px solid #bcd3ce;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  list-style: none;
+  margin: 4px -10px 0 -60px;
+  padding: 20px;
+}
+.side__logout {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  font-size: large;
+  margin: auto;
+}

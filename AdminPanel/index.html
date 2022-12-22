@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="main">
+      <aside class="side">
+        <h2>Admin Panel</h2>
+        <ul>
+          <li class="side__li">Options</li>
+          <li class="side__li">Static Pages</li>
+          <li class="side__li">Posts</li>
+          <li class="side__li">Modules</li>
+          <li class="side__li">Navigation Links</li>
+          <li class="side__li">Mailing List</li>
+          <li class="side__li">Themes</li>
+        </ul>
+        <button class="side__logout">Logout</button>
+      </aside>
+      <center>
+        <section>
+          <h2>Navigation Links</h2>
+          <table>
+            <tr>
+              <th>URL</th>
+              <th>Name</th>
+              <th>Edit</th>
+              <th>Move</th>
+              <th>Visbile</th>
+              <th>Delete</th>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Home</td>
+              <td><button>Edit</button></td>
+              <td><button>d</button></td>
+              <td><button>Visible</button></td>
+              <td><button>X</button></td>
+            </tr>
+            <tr>
+              <td>/posts</td>
+              <td>Post</td>
+              <td>Edit</td>
+              <td><button>u</button> <button>d</button></td>
+              <td><button>Visible</button></td>
+              <td><button>X</button></td>
+            </tr>
+            <tr>
+              <td>/contact</td>
+              <td>Contact</td>
+              <td>Edit</td>
+              <td><button>u</button></td>
+              <td><button>Visible</button></td>
+              <td><button>X</button></td>
+            </tr>
+          </table>
+          <div>
+            <h2>Quick Links</h2>
+            <button>Link Static Page</button><button>Link Post</button
+            ><button>Link Module</button>
+          </div>
+          <div>
+            <h2>Add New Link</h2>
+            <input type="text" placeholder="URL" /><input
+              type="text"
+              placeholder="Name"
+            /><button>Add</button>
+          </div>
+          <div>
+            <h3>Options</h3>
+            <h4>Navigation Link Spacer</h4>
+            <dropdown>
+              <option value="val">Wilder Space</option>
+              <option value="">Something else</option>
+            </dropdown>
+            <p>Set the spacing between the navigation links</p>
+          </div>
+          <hr />
+          <button>Save</button>
+        </section>
+      </center>
+    </section>
+  </body>
+</html>
