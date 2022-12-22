@@ -1,0 +1,120 @@
+/* To give font style to each member */
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/* For upper part */
+.head {
+  background-color: #f8f9dc;
+  margin: -12px 0 0 0;
+  padding-bottom: 10px;
+  width: 100%;
+}
+/* Cedc commerce logo */
+.head__logo {
+  max-width: 233px;
+  margin: 50px 0 0 60px;
+}
+/* Ced commerce heading */
+.head__heading {
+  font-size: 5vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 30px 0 0 60px;
+  text-shadow: 4px 8px 13px black;
+}
+/* Login heading */
+.login {
+  display: none;
+}
+/* Secondary seading */
+.--second {
+  font-size: 2vw;
+}
+/* hero img */
+.head__hero {
+  float: right;
+  margin-top: -300px;
+  width: 40%;
+}
+/* Second part */
+.form {
+  margin: 80px 0 0 160px;
+  letter-spacing: 2px;
+}
+/* Input container */
+.input {
+  background-color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  padding: 12px;
+  width: 25%;
+}
+/* For styling placeholder */
+.input::placeholder {
+  color: gray;
+}
+/* For styling button */
+.button {
+  background-color: #5900bd;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px black;
+  color: white;
+  cursor: pointer;
+  font-size: large;
+  margin: 20px 0 0 0;
+  padding: 12px;
+  width: 27.6%;
+}
+/* For styling link */
+.link {
+  color: black;
+  margin: 0 0 0 30px;
+  text-decoration: none;
+}
+/* Back button */
+.back {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  margin: 12px 0 0 160px;
+}
+/* Meda querry for resposive under 600px */
+@media screen and (max-width: 587px) {
+  .head {
+    padding-bottom: 30px;
+  }
+  .head__logo {
+    margin: 20px 0 0 130px;
+  }
+  .head__hero {
+    display: none;
+  }
+  .head__heading {
+    display: none;
+  }
+  .login {
+    display: block;
+    margin: 20px 0 0 190px;
+  }
+  .form__login {
+    margin: -10px 0 20px -20px;
+  }
+  .input {
+    display: block;
+    width: 90%;
+    margin: 10px 0 0 -70px;
+  }
+  .button {
+    display: block;
+    margin: 10px 0 20px -70px;
+    width: 100%;
+  }
+  .link {
+    margin: 0 0 0 -70px;
+  }
+  .back {
+    margin: 10px 0 0 82px;
+  }
+}
